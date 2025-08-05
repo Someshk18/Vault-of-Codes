@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chic Haven - Boutique Shopping</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img src="img/download.png" alt="Logo" class="logo" />
+      <h1>Welcome to Chic Haven</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Shop</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section id="product-categories">
+      <h2>Our Collections</h2>
+      <div class="category-list">
+        <!-- Frock -->
+        <div class="category-item">
+          <h3>Frock</h3>
+          <img
+            src="img/A beautiful frock.webp"
+            alt="Beautiful Frock"
+            class="image1"
+          />
+          <label for="frock-color">Color:</label>
+          <select id="frock-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="frock-design">Design:</label>
+          <select id="frock-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="frock-size">Size:</label>
+          <select id="frock-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="frock-material">Material:</label>
+          <select id="frock-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Frock')">Add to Cart</button>
+        </div>
+
+        <!-- Chudidhar -->
+        <div class="category-item">
+          <h3>Chudidhar</h3>
+          <img src="img/chudidar.webp" alt="Chudidhar" class="image2" />
+          <label for="chudidhar-color">Color:</label>
+          <select id="chudidhar-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="chudidhar-design">Design:</label>
+          <select id="chudidhar-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="chudidhar-size">Size:</label>
+          <select id="chudidhar-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="chudidhar-material">Material:</label>
+          <select id="chudidhar-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Chudidhar')">Add to Cart</button>
+        </div>
+
+        <!-- Kurthis -->
+        <div class="category-item">
+          <h3>Kurthis</h3>
+          <img src="img/A stylish kurta.webp" alt="Kurthis" class="image3" />
+          <label for="kurthis-color">Color:</label>
+          <select id="kurthis-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="kurthis-design">Design:</label>
+          <select id="kurthis-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="kurthis-size">Size:</label>
+          <select id="kurthis-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="kurthis-material">Material:</label>
+          <select id="kurthis-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Kurthis')">Add to Cart</button>
+        </div>
+
+        <!-- Blouse -->
+        <div class="category-item">
+          <h3>Blouse</h3>
+          <img src="img/blouse.jpeg" alt="image" class="image4">
+          <label for="blouse-color">Color:</label>
+          <select id="blouse-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="blouse-design">Design:</label>
+          <select id="blouse-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="blouse-size">Size:</label>
+          <select id="blouse-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="blouse-material">Material:</label>
+          <select id="blouse-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Blouse')">Add to Cart</button>
+        </div>
+
+        <!-- Lehanga -->
+        <div class="category-item">
+          <h3>Lehanga</h3>
+          <img src="img/Lahenga.webp" alt="Lehanga" class="image5" />
+          <label for="lehanga-color">Color:</label>
+          <select id="lehanga-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="lehanga-design">Design:</label>
+          <select id="lehanga-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="lehanga-size">Size:</label>
+          <select id="lehanga-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="lehanga-material">Material:</label>
+          <select id="lehanga-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Lehanga')">Add to Cart</button>
+        </div>
+
+        <!-- Anarkali Suit -->
+        <div class="category-item">
+          <h3>Anarkali Suit</h3>
+          <img src="img/anarkali.webp" alt="Anarkali Suit" class="image6" />
+          <label for="anarkali-color">Color:</label>
+          <select id="anarkali-color">
+            <option value="Red">Red</option>
+            <option value="Pink">Pink</option>
+            <option value="Blue">Blue</option>
+            <option value="Black">Black</option>
+            <option value="White">White</option>
+            <option value="Yellow">Yellow</option>
+            <option value="Green">Green</option>
+            <option value="Purple">Purple</option>
+          </select>
+          <br />
+
+          <label for="anarkali-design">Design:</label>
+          <select id="anarkali-design">
+            <option value="Hand Embroidery">Hand Embroidery</option>
+            <option value="Machine Embroidery">Machine Embroidery</option>
+            <option value="Block Prints">Block Prints</option>
+            <option value="Hand Painting">Hand Painting</option>
+            <option value="Machine Prints">Machine Prints</option>
+          </select>
+          <br />
+
+          <label for="anarkali-size">Size:</label>
+          <select id="anarkali-size">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+            <option value="XXL">XXL</option>
+          </select>
+          <br />
+
+          <label for="anarkali-material">Material:</label>
+          <select id="anarkali-material">
+            <option value="Cotton">Cotton</option>
+            <option value="Silk">Silk</option>
+            <option value="Chiffon">Chiffon</option>
+            <option value="Banaras">Banaras</option>
+            <option value="Denim">Denim</option>
+            <option value="Netted">Netted</option>
+            <option value="Kalamkari">Kalamkari</option>
+          </select>
+          <br />
+          <textarea>Description</textarea>
+          </br>
+          <button onclick="addToCart('Anarkali Suit')">Add to Cart</button>
+        </div>
+
+        <!-- Add more products similarly -->
+      </div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 Chic Haven. All rights reserved.</p>
+    </footer>
+
+    <button id="go-to-cart" class="floating-btn">Go to Cart</button>
+
+    <script>
+      let cart = [];
+
+      // Function to add item to cart
+      function addToCart(product) {
+        const color = document.getElementById(
+          `${product.toLowerCase().replace(/\s/g, "")}-color`
+        ).value;
+        const design = document.getElementById(
+          `${product.toLowerCase().replace(/\s/g, "")}-design`
+        ).value;
+        const size = document.getElementById(
+          `${product.toLowerCase().replace(/\s/g, "")}-size`
+        ).value;
+        const material = document.getElementById(
+          `${product.toLowerCase().replace(/\s/g, "")}-material`
+        ).value;
+
+        const cartItem = {
+          product,
+          color,
+          design,
+          size,
+          material,
+        };
+
+        cart.push(cartItem);
+        localStorage.setItem("cart", JSON.stringify(cart)); // Save cart to local storage
+      }
+
+      // Go to Cart Page
+      document.getElementById("go-to-cart").addEventListener("click", () => {
+        window.location.href = "cart.html"; // Redirect to cart page
+      });
+    </script>
+  </body>
+</html>

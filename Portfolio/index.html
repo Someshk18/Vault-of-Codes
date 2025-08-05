@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css"
+      rel="stylesheet"
+    />
+<link
+  rel="stylesheet"
+  href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+/>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Portfolio</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#nav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="nav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header
+      class="hero text-center text-white d-flex align-items-center justify-content-center"
+    >
+      <div class="container fade-in">
+        <img src="img/avatar.png" alt="My Avatar" class="hero-avatar mb-4" />
+
+        <h1 class="display-4 fw-bold">Hi, I'm Somesh Kumar 👋</h1>
+        <p class="lead">
+          Front-End Developer | Passionate Coder | Creative Thinker
+        </p>
+        <a href="#projects" class="btn btn-outline-light mt-3">See My Work</a>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 text-white fade-in">
+      <div class="container">
+        <h2 class="text-center mb-4">About Me</h2>
+        <p class="text-center">
+          I’m a front-end developer with a love for turning creative ideas into
+          functional web interfaces. Proficient in HTML, CSS, Bootstrap, and
+          JavaScript. Always eager to learn and grow.
+        </p>
+        <section id="skills" class="py-5 text-white fade-in">
+          <div class="container text-center">
+            <h2 class="mb-4">Skills</h2>
+            <div class="row g-4 justify-content-center">
+              <!-- Skill: HTML -->
+              <div class="col-6 col-md-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg"
+                  class="skill-icon"
+                  alt="HTML5"
+                />
+                <p>HTML</p>
+              </div>
+              <!-- Skill: CSS -->
+              <div class="col-6 col-md-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg"
+                  class="skill-icon"
+                  alt="CSS3"
+                />
+                <p>CSS</p>
+              </div>
+              <!-- Skill: JavaScript -->
+              <div class="col-6 col-md-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
+                  class="skill-icon"
+                  alt="JavaScript"
+                />
+                <p>JavaScript</p>
+              </div>
+              <!-- Skill: Bootstrap -->
+              <div class="col-6 col-md-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg"
+                  class="skill-icon"
+                  alt="Bootstrap"
+                />
+                <p>Bootstrap</p>
+              </div>
+              <!-- Skill: GitHub -->
+              <div class="col-6 col-md-2">
+                <img
+                  src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg"
+                  class="skill-icon"
+                  alt="GitHub"
+                  style="filter: invert(100%)"
+                />
+                <p>GitHub</p>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- Academics Section -->
+    <section id="academics" class="py-5 bg-light text-dark" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">🎓 Academics</h2>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Secondary (10th)</h5>
+                <p class="card-text">
+                  CMR International School | Graduated in 2021
+                </p>
+              </div>
+              <img src="img/school.jfif" alt="School">
+            </div>
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">Senior Secondary (12th)</h5>
+                <p class="card-text">
+                  Sri Chaitanya Junior College | Graduated in 2023
+                </p>
+              </div>
+              <img src="img/sri.webp" alt="Sri Chaitanya College">
+            </div>
+            <div class="card shadow-sm mb-4">
+              <div class="card-body">
+                <h5 class="card-title">B.Tech in Computer Science</h5>
+                <p class="card-text">
+                  Narsimha Reddy Engineering College | 2023 –
+                </p>
+              </div>
+              <img src="img/nrcm.jpg" alt="Narsimha Reddy Engineering College">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies" class="py-5 bg-dark text-white" data-aos="fade-up">
+      <div class="container">
+        <h2 class="text-center mb-5">🎯 Hobbies & Interests</h2>
+        <div class="row justify-content-center text-center">
+          <div class="col-md-3 mb-4">
+            <div class="card bg-secondary text-white h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">💻 Coding</h5>
+                <p class="card-text">
+                  Building fun and useful projects in my spare time.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-secondary text-white h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">♟️ Chess</h5>
+                <p class="card-text">
+                  A great mental exercise and strategic challenge.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-secondary text-white h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🏏 Playing Cricket</h5>
+                <p class="card-text">
+                  I enjoy staying active and competitive on the cricket field.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-3 mb-4">
+            <div class="card bg-secondary text-white h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title">🎧 Listening to Music</h5>
+                <p class="card-text">
+                  Music helps me relax and stay focused while coding.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects" class="py-5 bg-light fade-in">
+      <div class="container">
+        <h2 class="text-center mb-5">Projects</h2>
+        <div class="row g-5">
+          <!-- Tic Tac Toe Project -->
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="img/tic.jpeg" class="card-img-top" alt="Tic Tac Toe" />
+              <div class="card-body">
+                <h5 class="card-title">Tic Tac Toe</h5>
+                <p class="card-text">A game of strategy, in a small space.</p>
+                <a href="game.html" class="btn btn-primary" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- To-Do List Project -->
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="img/to.webp" class="card-img-top" alt="Tic Tac Toe" />
+              <div class="card-body">
+                <h5 class="card-title">TO-DO LIST</h5>
+                <p class="card-text">Master Your Tasks with Ease.</p>
+                <a href="to-do.html" class="btn btn-primary" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Weather Project -->
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="img/weather.png" class="card-img-top" alt="Weather" />
+              <div class="card-body">
+                <h5 class="card-title">WEATHER PAGE</h5>
+                <p class="card-text">Let Us Be Your Weather Whisperer.</p>
+                <a href="weather.html" class="btn btn-primary" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!--Dental Clinic-->
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="Dental-Clinic-main/images/SDC Logo.png" class="card-img-top" alt="Weather" />
+              <div class="card-body">
+                <h5 class="card-title">Dental Clinic</h5>
+                <p class="card-text">A brighter smile awaits you.</p>
+                <a href="Dental-Clinic-main/index.html" class="btn btn-primary" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+
+          <!-- Shopping Webpage Project -->
+          <div class="col-md-4">
+            <div class="card project-card h-100">
+              <img src="img/shoping.png" class="card-img-top" alt="Tic Tac Toe" />
+              <div class="card-body">
+                <h5 class="card-title">SHOPPING-WEBPAGE</h5>
+                <p class="card-text">New Clothes, New Passion</p>
+                <a href="page.html" class="btn btn-primary" target="_blank"
+                  >View Project</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Carousel -->
+
+    <section id="certifications" class="my-5 container">
+      <h2 class="text-center text-white mb-4">Certifications</h2>
+      <div id="certCarousel" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/infosys.jpeg" class="d-block w-100" alt="Certificate 1" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>HTML and CSS - Infosys</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/js.jpeg" class="d-block w-100" alt="Certificate 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>JavaScript Course - Let's Upgrade</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/intern1.jpg" class="d-block w-100" alt="Certificate 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Web Development Intern - ShadowFox</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/intern2.png" class="d-block w-100" alt="Certificate 2" />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Front-End Developer Intern - Alfido Tech</h5>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img
+              src="img/accenture.jpeg"
+              class="d-block w-100"
+              alt="Certificate 3"
+            />
+            <div class="carousel-caption d-none d-md-block">
+              <h5>Accenture</h5>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#certCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#certCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!--Work Experience-->
+    
+    <section id="experience" class="my-5 py-5 text-white text-center">
+      <h2 class="mb-5">Work Experience</h2>
+      <div class="timeline-vertical">
+        <div class="timeline-block left">
+          <div class="timeline-content">
+            <h5>May, 2025</h5>
+            <p>Web Development Intern at <br />ShadowFox</p>
+          </div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="timeline-vertical">
+        <div class="timeline-block right">
+          <div class="timeline-content">
+            <h5>July, 2025</h5>
+            <p>Front-End Developer Intern at <br />Alfido Tech</p>
+          </div>
+          <div class="circle"></div>
+        </div>
+      </div>
+      <div class="timeline-vertical">
+        <div class="timeline-block left">
+          <div class="timeline-content">
+            <h5>August, 2025</h5>
+            <p>Web Development Intern at <br />Vault of Codes</p>
+          </div>
+          <div class="circle pulse-circle">
+            <i class="fas fa-user-graduate"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <footer class="site-footer">
+      <a href="contact.html" class="contact-btn">Contact Me</a>
+      <p></p>
+      <p>&copy; 2025 Somesh Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+  </body>
+</html>

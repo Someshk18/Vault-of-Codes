@@ -1,0 +1,31 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+table {
+  margin: 20px auto;
+  border-collapse: collapse;
+}
+td {
+  width: 60px;
+  height: 60px;
+  font-size: 2em;
+  text-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+}
+td:hover {
+  background-color: #f0f0f0;
+}
+.red {
+  color: red;
+}
+.blue {
+  color: blue;
+}
+button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+}
