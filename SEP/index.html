@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Chocolate Cake Recipe</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="recipe-card">
+    <h1>🍫 Chocolate Cake</h1>
+    <img src="img/cake.jpg" alt="Chocolate Cake" class="dish-image" />
+
+    <div class="info">
+      <p><strong>Prep Time:</strong> 45 mins</p>
+      <p><strong>Servings:</strong> 8</p>
+    </div>
+
+    <button id="toggle-ingredients">Show Ingredients</button>
+    <ul id="ingredients" class="hidden">
+      <li>2 cups flour</li>
+      <li>1 cup sugar</li>
+      <li>1/2 cup cocoa powder</li>
+      <li>2 eggs</li>
+      <li>1 cup milk</li>
+    </ul>
+
+    <button id="toggle-steps">Show Steps</button>
+    <ol id="steps" class="hidden">
+      <li>Preheat oven to 350°F (175°C).</li>
+      <li>Mix dry ingredients together.</li>
+      <li>Add eggs and milk, stir until smooth.</li>
+      <li>Pour into a greased pan.</li>
+      <li>Bake for 30–35 minutes.</li>
+    </ol>
+
+    <div class="progress-container">
+      <div id="progress-bar"></div>
+    </div>
+
+    <button id="start-cooking">Start Cooking</button>
+    <button id="next-step" class="hidden">Next</button>
+
+    <div id="timer" class="hidden">⏱️ Time Left: <span id="time">45:00</span></div>
+  </div>
+
+  <script>
+    const ingredientsBtn = document.getElementById("toggle-ingredients");
+    const stepsBtn = document.getElementById("toggle-steps");
+    const ingredientsList = document.getElementById("ingredients");
+    const stepsList = document.getElementById("steps");
+    const startBtn = document.getElementById("start-cooking");
+    const nextBtn = document.getElementById("next-step");
+    const progressBar = document.getElementById("progress-bar");
+    const timerDisplay = document.getElementById("timer");
+    const timeSpan = document.getElementById("time");
+
+    let currentStep = 0;
+    let steps = stepsList.querySelectorAll("li");
+    let timerInterval;
+
+    ingredientsBtn.onclick = () => {
+      const isHidden = ingredientsList.classList.toggle("hidden");
+      ingredientsBtn.textContent = isHidden ? "Show Ingredients" : "Hide Ingredients";
+    };
+
+    stepsBtn.onclick = () => {
+      const isHidden = stepsList.classList.toggle("hidden");
+      stepsBtn.textContent = isHidden ? "Show Steps" : "Hide Steps";
+    };
+
+    startBtn.onclick = () => {
+      currentStep = 0;
+      highlightStep(currentStep);
+      nextBtn.classList.remove("hidden");
+      timerDisplay.classList.remove("hidden");
+      startTimer(45 * 60); // 45 minutes
+    };
+
+    nextBtn.onclick = () => {
+      if (currentStep < steps.length - 1) {
+        currentStep++;
+        highlightStep(currentStep);
+      } else {
+        nextBtn.classList.add("hidden");
+        alert("🎉 All steps completed! Enjoy your cake!");
+      }
+    };
+
+    function highlightStep(index) {
+      steps.forEach((step, i) => {
+        step.style.background = i === index ? "#ffe4b5" : "transparent";
+      });
+      progressBar.style.width = `${((index + 1) / steps.length) * 100}%`;
+    }
+
+    function startTimer(seconds) {
+      clearInterval(timerInterval);
+      timerInterval = setInterval(() => {
+        const min = String(Math.floor(seconds / 60)).padStart(2, "0");
+        const sec = String(seconds % 60).padStart(2, "0");
+        timeSpan.textContent = `${min}:${sec}`;
+        if (seconds-- <= 0) {
+          clearInterval(timerInterval);
+          alert("⏰ Time’s up! Your cake should be ready!");
+        }
+      }, 1000);
+    }
+  </script>
+</body>
+</html>
